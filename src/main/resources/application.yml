@@ -1,7 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://b92d99315a66da:0ed1b4dd@us-cdbr-iron-east-05.cleardb.net/heroku_6878de95a3b2d0d?reconnect=true
+    url: jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_6878de95a3b2d0d?reconnect=true
+    username: b92d99315a66da
+    password: 0ed1b4dd
   jpa:
     database: MYSQL
     hibernate:
