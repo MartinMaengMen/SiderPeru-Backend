@@ -11,6 +11,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface IRespuestaRepository extends JpaRepository<Respuesta,Integer> {
 	//METODO QUE DEVUELVE UNA LISTA DE PROYECTOS FILTRADOS POR EL ID DE UN PROYECTO
-	@Query("SELECT r FROM Respuesta WHERE r.proyecto.id = ?1")
+	@Query("SELECT r FROM Respuesta r WHERE r.proyecto.id = ?1")
 	List<Respuesta> fetchByProjectId(Integer id);
 }

@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface INumeroContactoRepository extends JpaRepository<NumeroContacto,Integer> {
-	@Query("SELECT nc FROM NumeroContacto WHERE nc.proyecto.id = ?1")
+	@Query("SELECT nc FROM NumeroContacto nc WHERE nc.proyecto.id = ?1")
 	List<NumeroContacto> fetchByProjectId(Integer id);
 }
